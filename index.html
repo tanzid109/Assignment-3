@@ -25,14 +25,17 @@
                     colors: {
                         clifford: '#da373d',
                         main: '#ABEF5F'
-                        
+                    },
+                    backgroundImage: {
+                        bg_img: "url('assets/bg.jpg')"
                     }
+
                 }
             }
         }
     </script>
 </head>
-<body class="manrope-regular">
+<body class="manrope-regular max-w-screen-2xl mx-auto">
     <!-- Header section -->
     <header class="mx-auto p-5 bg-white">
         <!-- nav bar -->
@@ -76,7 +79,7 @@
                             The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek
                             metal accents, and large windows that flood the space with natural light.
                         </p>
-                        <div><button class="btn btn-lg bg-[#acef5f7c] text-xl font-bold rounded-full">View Details 
+                        <div><button class="btn lg:btn-lg btn-wide bg-[#acef5f7c] text-xl font-bold rounded-full">View Details 
                             <i class="fa-solid fa-circle-arrow-up text-2xl rotate-45 text-main"></i></button></i></div>
                     </div>
                 </div>
@@ -86,8 +89,8 @@
     <!-- main section -->
     <main class="mx-auto bg-[#F4F4F4]">
         <!-- About us -->
-        <section class="items-center justify-center mt-10 mb-2 p-10">
-            <div class=" min-h-screen">
+        <section class="items-center justify-center mt-10 mb-2 lg:p-10 p-5">
+            <div class="">
                 <div class="hero-content mx-auto flex-col-reverse lg:flex-row-reverse gap-10 ">
                     <img src="assets/Rectangle.png" class="rounded-lg" />
                     <div class="relative">
@@ -191,6 +194,29 @@
                 </div>
             </div>
          </section>
+         <!-- form  -->
+          <section class="bg-bg_img bg-no-repeat bg-cover ">
+            <div class="w-full h-full bg-[#f8f6f3] bg-opacity-50 flex  flex-col items-center">
+                <div class="text-center p-5">
+                <div>
+                    <div>
+                        <button class="btn rounded-full bg-[#ABEF5F33] mb-5"><i class="fa-solid fa-arrow-right"></i>Let’s Discuss Next Project</button>
+                    </div>
+                </div>
+                <h1 class="text-4xl font-extrabold mb-2">Let’s Discuss Next Project</h1>
+                <p class="text-base font-medium lg:mb-2 p-5 mx-auto lg:w-2/3">The barn house captivates with its blend of rustic charm and modern sophistication featuring weathered wood, sleek metal accents.</p>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-4 mb-5 w-full p-5 lg:w-2/3">
+                    <input type="text" placeholder="First Name*" class="input  rounded-full w-full" />
+                    <input type="text" placeholder="Last Name*" class="input  rounded-full w-full" />
+                    <input type="number" placeholder="Phone Number" class="input  rounded-full w-full" />
+                    <input type="text" placeholder="Email" class="input  rounded-full w-full" />
+                    <textarea class="textarea textarea-lg p-5 pb-20  lg:col-span-2"  placeholder="Write your message here"></textarea>
+                    <button class="btn btn-lg bg-main text-xl font-bold lg:col-span-2 rounded-full">Send Mail <i class="fa-solid fa-circle-arrow-up text-2xl rotate-45 text-[#1C1C1C]"></i>
+                    </button>
+                </div>
+            </div>
+          </section>
     </main>
     <!-- Footer section -->
     <footer>
